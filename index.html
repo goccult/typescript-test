@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="dist/require.js"></script>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    img {
+      -webkit-user-drag: none;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    #canvas {
+      border: dashed 1px black;
+      width: 1000px;
+      height: 700px;
+      position: relative;
+      overflow: hidden;
+    }
+    .action-box {
+      width: 100%;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="action-box">
+      <button onclick="addCircle()">添加圆形</button>
+      <button onclick="addSquare()">添加正方形</button>
+      <button onclick="addRectangle()">添加长方形</button>
+      <button onclick="addImg()">添加图片</button>
+    </div>
+    <div id="canvas"></div>
+  </div>
+  <script src="dist/index.js"></script>
+</body>
+</html>
